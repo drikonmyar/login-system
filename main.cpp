@@ -103,6 +103,10 @@ void forgot(){
     cout<<"2. Mainmenu"<<endl;
     cout<<"\nEnter your choice : ";
     cin>>ch;
+    if(!cin){
+        cout<<"Non-numeric value not supported!";
+        return;
+    }
     system("cls");
 
     switch(ch){
